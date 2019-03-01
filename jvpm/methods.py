@@ -69,7 +69,7 @@ class Methods():
     def iconst_1(self):
         """iconst_1: load the int value 1 onto the stack"""
         S.push(1)
-        print("iconst_1: Pushed " + str(S.peek()) + " to Stack in jvpm_methods.py.")
+        print("04 = iconst_1: Pushed " + str(S.peek()) + " to Stack in jvpm_methods.py.")
 
     # load the int value 2 onto the stack
     def iconst_2(self):
@@ -80,7 +80,7 @@ class Methods():
     def iconst_3(self):
         """iconst_3: load the int value 3 onto the stack"""
         S.push(3)
-        print("iconst_3: Pushed " + str(S.peek()) + " to Stack in jvpm_methods.py.")
+        print("06 = iconst_3: Pushed " + str(S.peek()) + " to Stack in jvpm_methods.py.")
 
     def iconst_4(self):
         """iconst_4: load the int value 4 onto the stack"""
@@ -167,13 +167,13 @@ class Methods():
         """iload: push variable[1] to the Stack"""
         pushing = OPERANDS[1]
         S.push(pushing)
-        print('iload_1: Push OPERANDS[1] on the Stack for processing.')
+        print('1b = iload_1: Push OPERANDS[1] on the Stack for processing.')
 
     def iload_2(self):
         """iload: push variable[2] to the Stack"""
         pushing2 = OPERANDS[2]
         S.push(pushing2)
-        print('iload_2: Push OPERANDS[2] on the Stack for processing.')
+        print('1c = iload_2: Push OPERANDS[2] on the Stack for processing.')
 
     def iload_3(self):
         """iload: push variable[3] to the Stack"""
@@ -292,7 +292,7 @@ class Methods():
         """istore_3: store int value into OPERANDS[3]"""
         popped = S.pop()
         OPERANDS.insert(3, popped)
-        print("istore_3: Popped " + str(popped) +
+        print("3e = istore_3: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[3] in jvpm_methods.py,")
         print("OPERANDS[] = " + str(OPERANDS))
         print(">>>>>>>>>>>>>>>>>>>>>>>> c = " + str(popped) + " <<<<<<<<<<<<<<<<<<<<<<<<<<<")
@@ -323,5 +323,5 @@ class Methods():
         variable2 = S.pop()
         variable1 = S.pop()
         S.push(variable1 ^ variable2)
-        print("Popped 2 values from the Stack and stored in local variables,"
+        print("82 = ixor: Popped 2 values from the Stack and stored in local variables,"
               "\nixor = " + str(S.peek()) + " and pushed back to Stack")
