@@ -40,6 +40,7 @@ class Methods():
               ") from the Stack, assigned to local variables, \nadded the two,"
               " and pushed result back to Stack.")
         print(">>>> Top of Stack is now " + str(S.peek()) + ".")
+        return var1 + var2
 
     # def method11():
     #     print('method11')
@@ -53,6 +54,7 @@ class Methods():
               ") from the Stack, assigned to local variables, \nperformed bitwise"
               " AND and pushed the result (" + str(var2 & var1) + ") back to Stack")
         print(">>>> Top of Stack is now " + str(S.peek()) + ".")
+        
     # def iastore():
     #     print('iastore')
 
