@@ -45,7 +45,7 @@ class Methods():
     # def method11():
     #     print('method11')
 
-    def iand():
+    def iand(self):
         """iand: performed bitwise AND on two integers"""
         var2 = S.pop()
         var1 = S.pop()
@@ -59,7 +59,7 @@ class Methods():
     # def iastore():
     #     print('iastore')
 
-    def iconst_m1():
+    def iconst_m1(self):
         """iconst_m1: load the int value -1 onto the stack"""
         S.push(-1)
         print("iconst_m1: Pushed " + str(S.peek()) + " to Stack in jvpm_methods.py.")
@@ -215,7 +215,7 @@ class Methods():
         print(">>>> Top of Stack is now " + str(S.peek()) + ".")
         return var1 * var2
 
-    def ineg(selfself):
+    def ineg(self):
         """ineg: value minus zero"""
         var1 = S.pop()
         S.push(0 - var1)
@@ -252,7 +252,7 @@ class Methods():
         print(">>>> Top of Stack is now " + str(S.peek()) + ".")
         return var1 | var2
 
-    def irem():
+    def irem(self):
         """logical in remainder"""
         var2 = S.pop()
         var1 = S.pop()
@@ -263,7 +263,7 @@ class Methods():
     # def ireturn():
     #     print('ireturn')
 
-    def ishl():
+    def ishl(self):
         """int logical shift left"""
         var2 = S.pop()
         var1 = S.pop()
@@ -275,7 +275,7 @@ class Methods():
         return var1 << var2
 
 
-    def ishr():
+    def ishr(self):
         """description here"""
         var2 = S.pop()
         var1 = S.pop()
@@ -287,7 +287,7 @@ class Methods():
     #     """istore: store int value into array[in]"""
     #     print('method57')
 
-    def istore_0():
+    def istore_0(self):
         """istore_0: store int value into OPERANDS[0]"""
         popped = S.pop()
         OPERANDS.pop(0) # remove the assigned 0 from the [0]position
@@ -325,7 +325,7 @@ class Methods():
         print(">>>> Size of Stack is now " + str(S.size()) + ".")
         return OPERANDS[3]
 
-    def isub():
+    def isub(self):
         """isub: subtract two ints"""
         var2 = S.pop()
         var1 = S.pop()
@@ -336,7 +336,7 @@ class Methods():
         print(">>>> Top of Stack is now " + str(S.peek()) + ".")
         return var1 - var2
 
-    def iushr():
+    def iushr(self):
         """int logical shift right"""
         var2 = S.pop()
         var1 = S.pop()
