@@ -5,6 +5,7 @@ from bitstring import ConstBitStream
 import jvpm_dict    # import external opcode dictionary
 import jvpm_methods # import external method dictionary
 from methods import Methods
+import methods
 method_call = Methods()
 
 # pylint: disable = W0105, C0122, R0903
@@ -86,6 +87,8 @@ class OpCodes():
             # but when I try to call using the "opcall" variable name it fails, its trying to
             # send "opcall" to the new Method() class instead of the value of opcall - iconst_1. 
             # method_call.opcall()
+        
+            result = getattr(methods, '06')()
         
             index += 1
         print()
