@@ -76,7 +76,8 @@ class OpCodes():
         print()
         
         # Call methods from Methods() class in methods.py:
-        print("Using the new Methods() class in methods.py for methods and unittest integration:")
+        print("Using the new Methods() class in methods.py for method calls and"
+               "unittest integration:")
         print("\nBytecodes from .class file: " + str(self.opcodes))
         index = 0
         while index < len(self.opcodes):
