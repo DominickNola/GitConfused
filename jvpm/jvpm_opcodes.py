@@ -65,7 +65,7 @@ class OpCodes():
 	# Call methods using the dictionary in jvpm_methods.py:
 	# Hex to Opcode from imported opcode dictionary - jvpm_dict,
         # implemented using imported method dictionary - jvpm_methods.
-        print("Using the old jvpm_methods dictionary to call methods:")
+        print("\nUsing the old jvpm_methods dictionary to call methods:")
         print("\nBytecodes from the .class file: " + str(self.opcodes))
         index = 0
         while index < len(self.opcodes):
