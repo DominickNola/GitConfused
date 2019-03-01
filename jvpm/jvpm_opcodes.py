@@ -82,7 +82,7 @@ class OpCodes():
         index = 0
         while index < len(self.opcodes):
             opcall = jvpm_dict.get_opcode(self.opcodes[index])
-            print("Bytecode " + self.opcodes[index] + ' = ' + opcall)
+            print(self.opcodes[index] + ' = ' + opcall)
             result = getattr(Methods(), opcall)()
             index += 1
         print()
