@@ -5,8 +5,8 @@ S = stack.Stack()
 class Methods():
     """class of methods called from the main, using method names retrieved from jvpm_dict.py"""
     def __init__(self):
-    OPERANDS = [0]
-
+        self.OPERANDS = [0]
+    
     # def i2b():
     #     print('i2b')
     #     https://www.delftstack.com/howto/python/how-to-convert-int-to-bytes-in-python-2-and-python-3/
@@ -266,29 +266,29 @@ class Methods():
     def istore_0():
         """istore_0: store int value into OPERANDS[0]"""
         popped = S.pop()
-        OPERANDS.pop(0) # remove the assigned 0 from the [0]position
-        OPERANDS.insert(0, popped)
+        self.OPERANDS.pop(0) # remove the assigned 0 from the [0]position
+        self.OPERANDS.insert(0, popped)
         print("istore_0: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[0] in jvpm_methods.py.")
 
     def istore_1(self):
         """istore_1: store int value into OPERANDS[1]"""
         popped = S.pop()
-        OPERANDS.insert(1, popped)
+        self.OPERANDS.insert(1, popped)
         print("istore_1: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[1] in jvpm_methods.py.")
 
     def istore_2(self):
         """istore_2: store int value into OPERANDS[2]"""
         popped = S.pop()
-        OPERANDS.insert(2, popped)
+        self.OPERANDS.insert(2, popped)
         print("istore_2: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[2] in jvpm_methods.py.")
 
     def istore_3(self):
         """istore_3: store int value into OPERANDS[3]"""
         popped = S.pop()
-        OPERANDS.insert(3, popped)
+        self.OPERANDS.insert(3, popped)
         print("istore_3: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[3] in jvpm_methods.py,"
               "\n>>>>>>>>>>>>>>>>>>>>>>>> c = " + str(popped) + " <<<<<<<<<<<<<<<<<<<<<<<<<<<")
