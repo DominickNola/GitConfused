@@ -270,14 +270,14 @@ class Methods():
         OPERANDS.pop(0) # remove the assigned 0 from the [0]position
         OPERANDS.insert(0, popped)
         print("istore_0: Popped " + str(popped) +
-              " from Stack and stored in OPERANDS[0] in jvpm_methods.py.")
+              " from Stack and stored in OPERANDS[0] in methods.py.")
 
     def istore_1(self):
         """istore_1: store int value into OPERANDS[1]"""
         popped = S.pop()
         OPERANDS.insert(1, popped)
         print("3c = istore_1: Popped " + str(popped) +
-              " from Stack and stored in OPERANDS[1] in jvpm_methods.py.")
+              " from Stack and stored in OPERANDS[1] in methods.py.")
         print("OPERANDS[] = " + str(OPERANDS))
 
     def istore_2(self):
@@ -285,7 +285,7 @@ class Methods():
         popped = S.pop()
         OPERANDS.insert(2, popped)
         print("3d = istore_2: Popped " + str(popped) +
-              " from Stack and stored in OPERANDS[2] in jvpm_methods.py.")
+              " from Stack and stored in OPERANDS[2] in methods.py.")
         print("OPERANDS[] = " + str(OPERANDS))
 
     def istore_3(self):
@@ -293,7 +293,7 @@ class Methods():
         popped = S.pop()
         OPERANDS.insert(3, popped)
         print("3e = istore_3: Popped " + str(popped) +
-              " from Stack and stored in OPERANDS[3] in jvpm_methods.py,")
+              " from Stack and stored in OPERANDS[3] in methods.py,")
         print("OPERANDS[] = " + str(OPERANDS))
         print(">>>>>>>>>>>>>>>>>>>>>>>> c = " + str(popped) + " <<<<<<<<<<<<<<<<<<<<<<<<<<<")
         print(">>>> Top of Stack is now " + str(S.size()) + ".")
