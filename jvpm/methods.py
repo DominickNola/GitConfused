@@ -91,7 +91,7 @@ class Methods():
         S.push(5)
         print('"iconst_5: Pushed " + str(S.peek()) + " to Stack in jvpm_methods.py."')
 
-    def idiv():
+    def idiv(self):
         """idiv: divide two numbers"""
         var2 = S.pop()
         var1 = S.pop()
@@ -156,25 +156,25 @@ class Methods():
     # def iload():
     #     print('iload')
 
-    def iload_0():
+    def iload_0(self):
         """iload: push variable[0] to the Stack"""
         pushing = OPERANDS[0]
         S.push(pushing)
         print('iload_0: Load OPERANDS[0] on the Stack for processing.')
 
-    def iload_1():
+    def iload_1(self):
         """iload: push variable[1] to the Stack"""
         pushing = OPERANDS[1]
         S.push(pushing)
         print('iload_1: Load OPERANDS[1] on the Stack for processing.')
 
-    def iload_2():
+    def iload_2(self):
         """iload: push variable[2] to the Stack"""
         pushing2 = OPERANDS[2]
         S.push(pushing2)
         print('iload_2: Load OPERANDS[2] on the Stack for processing.')
 
-    def iload_3():
+    def iload_3(self):
         """iload: push variable[3] to the Stack"""
         pushing3 = OPERANDS[3]
         S.push(pushing3)
@@ -186,7 +186,7 @@ class Methods():
     # def impdep2():
     #     print('impdep2')
 
-    def imul():
+    def imul(self):
         """imul: multiply two integers"""
         var2 = S.pop()
         var1 = S.pop()
@@ -196,7 +196,7 @@ class Methods():
               " and pushed result back to Stack.")
         print(">>>> Top of Stack is now " + str(S.peek()) + ".")
 
-    def ineg():
+    def ineg(selfself):
         """ineg: value minus zero"""
         var1 = S.pop()
         S.push(0 - var1)
@@ -221,7 +221,7 @@ class Methods():
     # def invokevirtual():
     #     print('invokevirtual')
 
-    def ior():
+    def ior(self):
         """ior: performed bitwise OR on two integers"""
         var2 = S.pop()
         var1 = S.pop()
@@ -271,21 +271,21 @@ class Methods():
         print("istore_0: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[0] in jvpm_methods.py.")
 
-    def istore_1():
+    def istore_1(self):
         """istore_1: store int value into OPERANDS[1]"""
         popped = S.pop()
         OPERANDS.insert(1, popped)
         print("istore_1: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[1] in jvpm_methods.py.")
 
-    def istore_2():
+    def istore_2(self):
         """istore_2: store int value into OPERANDS[2]"""
         popped = S.pop()
         OPERANDS.insert(2, popped)
         print("istore_2: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[2] in jvpm_methods.py.")
 
-    def istore_3():
+    def istore_3(self):
         """istore_3: store int value into OPERANDS[3]"""
         popped = S.pop()
         OPERANDS.insert(3, popped)
@@ -314,7 +314,7 @@ class Methods():
             S.push((var1 + 0x10000000) >> var2)
         print("iushr = " + str(S.peek()))
 
-    def ixor():
+    def ixor(self):
         """int xor"""
         variable2 = S.pop()
         variable1 = S.pop()
