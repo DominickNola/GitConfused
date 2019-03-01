@@ -76,11 +76,14 @@ class OpCodes():
         index = 0
         while index < len(self.opcodes):
             opcall = jvpm_dict.get_opcode(self.opcodes[index])
+            list = [opcall]
             print("Bytecode " + self.opcodes[index] + ' = Opcode: ' + opcall)
             # jvpm_methods.opcode_methods(opcall)
             # Im able to call the method in Methods() class in methods.py using the opcade name
             method_call.iconst_3()
-            method_call.(self.opcodes[0])()
+            for item in list:
+                method_call.item()
+            # method_call.opcall()
             # but when I try to call opcall it fails, even though opcall = iconst_1.
             # method_call.opcall()
             index += 1
