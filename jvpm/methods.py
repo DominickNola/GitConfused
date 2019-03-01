@@ -72,6 +72,7 @@ class Methods():
         """iconst_1: load the int value 1 onto the stack"""
         S.push(1)
         print("> 04 = iconst_1: Pushed " + str(S.peek()) + " to Stack in jvpm_methods.py.")
+        return S.peek()
 
     # load the int value 2 onto the stack
     def iconst_2(self):
