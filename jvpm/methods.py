@@ -30,7 +30,7 @@ class Methods():
     # def i2s():
     #     print('i2s')
 
-    def iadd():
+    def iadd(self):
         """iadd: add two ints"""
         var2 = S.pop()
         var1 = S.pop()
