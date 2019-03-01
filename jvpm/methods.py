@@ -322,4 +322,5 @@ class Methods():
         variable2 = S.pop()
         variable1 = S.pop()
         S.push(variable1 ^ variable2)
-        print("ixor = " + str(S.peek()))
+        print("Popped 2 values from the Stack and stored in local variables,"
+              "\nixor = " + str(S.peek()) + " and pushed back to Stack")
