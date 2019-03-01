@@ -213,7 +213,7 @@ class Methods():
               ") from the Stack, assigned to local variables, \nmultiplied the two,"
               " and pushed result back to Stack.")
         print(">>>> Top of Stack is now " + str(S.peek()) + ".")
-        return 
+        return var1 * var2
 
     def ineg(selfself):
         """ineg: value minus zero"""
