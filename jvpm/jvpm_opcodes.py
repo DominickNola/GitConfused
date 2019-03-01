@@ -79,6 +79,7 @@ class OpCodes():
             print("Bytecode " + self.opcodes[index] + ' = Opcode: ' + opcall)
             jvpm_methods.opcode_methods(opcall)
             method_call.iconst_3()
+            method_call.jvpm_dict.get_opcode(self.opcodes[index])()
             index += 1
         print()
         # return
