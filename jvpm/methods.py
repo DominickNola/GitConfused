@@ -54,6 +54,7 @@ class Methods():
               ") from the Stack, assigned to local variables, \nperformed bitwise"
               " AND and pushed the result (" + str(var2 & var1) + ") back to Stack")
         print(">>>> Top of Stack is now " + str(S.peek()) + ".")
+        return var1 & var2
         
     # def iastore():
     #     print('iastore')
@@ -62,11 +63,13 @@ class Methods():
         """iconst_m1: load the int value -1 onto the stack"""
         S.push(-1)
         print("iconst_m1: Pushed " + str(S.peek()) + " to Stack in jvpm_methods.py.")
+        return S.peek()
 
     def iconst_0(self):
         """iconst_0: load the int value 0 onto the stack"""
         S.push(0)
         print("iconst_0: Pushed " + str(S.peek()) + " to Stack in jvpm_methods.py.")
+        return S.peek()
 
     def iconst_1(self):
         """iconst_1: load the int value 1 onto the stack"""
@@ -108,6 +111,7 @@ class Methods():
               ") from the Stack, assigned to local variables, \ndivided the two,"
               " and pushed result back to Stack.")
         print(">>>> Top of Stack is now " + str(S.peek()) + ".")
+        return var1 / var2
 
     # def if_acmpeq():
     #     print('if_acmpeq')
@@ -209,13 +213,15 @@ class Methods():
               ") from the Stack, assigned to local variables, \nmultiplied the two,"
               " and pushed result back to Stack.")
         print(">>>> Top of Stack is now " + str(S.peek()) + ".")
+        return 
 
     def ineg(selfself):
         """ineg: value minus zero"""
         var1 = S.pop()
         S.push(0 - var1)
         print('ineg: Popped ' + str(var1) + ' from Stack, ineg = ' + str(S.peek()) + ','
-                                                                                     ' and pushed back to Stack.')
+              ' and pushed back to Stack.')
+        return 0 - var1
 
     # def instanceof():
     #     print('instanceof')
@@ -244,6 +250,7 @@ class Methods():
               ") from the Stack, assigned to local variables, \nperformed bitwise"
               " OR and pushed the result (" + str(var2 | var1) + ") back to Stack")
         print(">>>> Top of Stack is now " + str(S.peek()) + ".")
+        return var1 | var2
 
     def irem():
         """logical in remainder"""
@@ -251,6 +258,7 @@ class Methods():
         var1 = S.pop()
         S.push(var1 % var2)
         print("irem = " + str(S.peek()))
+        return var1 % var2
 
     # def ireturn():
     #     print('ireturn')
@@ -262,8 +270,9 @@ class Methods():
         S.push(var1 << var2)
         print("> ishl: Popped (" +str(var1) + ") and (" + str(var2) + ") and shifted"
               + str(var1) + " left by " + str(var2) + " bit(s) and pushed the result"
-                                                      " back to Stack.")
+              " back to Stack.")
         print("ishl = " + str(S.peek()))
+        return var1 << var2
 
 
     def ishr():
@@ -272,6 +281,7 @@ class Methods():
         var1 = S.pop()
         S.push(var1 >> var2)
         print("ishr = " + str(S.peek()))
+        return var1 >> var2
 
     # def istore():
     #     """istore: store int value into array[in]"""
@@ -324,6 +334,7 @@ class Methods():
               ") from the Stack, assigned to local variables, \nsubtracted the two,"
               " and pushed result back to Stack.")
         print(">>>> Top of Stack is now " + str(S.peek()) + ".")
+        return var1 - var2
 
     def iushr():
         """int logical shift right"""
@@ -334,6 +345,7 @@ class Methods():
         else:
             S.push((var1 + 0x10000000) >> var2)
         print("iushr = " + str(S.peek()))
+        return var1 >> var2
 
     def ixor(self):
         """int xor"""
@@ -342,3 +354,4 @@ class Methods():
         S.push(variable1 ^ variable2)
         print("82 = ixor: Popped 2 values from the Stack and stored in local variables,"
               "\nixor = " + str(S.peek()) + " and pushed back to Stack")
+        return variable1 ^ variable2
