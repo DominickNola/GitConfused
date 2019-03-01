@@ -1,11 +1,11 @@
 """import stack.py"""
 import stack
 S = stack.Stack()
-OPERANDS = [0]
 
 class Methods():
     """class of methods called from the main, using method names retrieved from jvpm_dict.py"""
     def __init__(self):
+        OPERANDS = [0]
 
     # def i2b():
     #     print('i2b')
@@ -30,15 +30,15 @@ class Methods():
     # def i2s():
     #     print('i2s')
 
-#     def iadd(self):
-#         """iadd: add two ints"""
-#         var2 = S.pop()
-#         var1 = S.pop()
-#         S.push(var1 + var2)
-#         print("> iadd: Popped (" + str(var1) + ") and (" + str(var2) +
-#               ") from the Stack, assigned to local variables, \nadded the two,"
-#               " and pushed result back to Stack.")
-#         print(">>>> Top of Stack is now " + str(S.peek()) + ".")
+    def iadd(self):
+        """iadd: add two ints"""
+        var2 = S.pop()
+        var1 = S.pop()
+        S.push(var1 + var2)
+        print("> iadd: Popped (" + str(var1) + ") and (" + str(var2) +
+              ") from the Stack, assigned to local variables, \nadded the two,"
+              " and pushed result back to Stack.")
+        print(">>>> Top of Stack is now " + str(S.peek()) + ".")
 
     # def method11():
     #     print('method11')
