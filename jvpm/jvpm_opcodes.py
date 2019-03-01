@@ -4,7 +4,7 @@
 from bitstring import ConstBitStream
 import jvpm_dict    # import external opcode dictionary
 import jvpm_methods # import external method dictionary
-# from methods import Methods
+from methods import Methods
 import methods
 method_call = Methods()
 
