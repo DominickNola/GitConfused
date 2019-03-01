@@ -59,6 +59,7 @@ class OpCodes():
         """
 
     def dict_search(self):
+        
         """Search the jvpm.dict.py(dictionary) file for the bytecode/opcode translation and
         implement if found."""
 	# Hex to Opcode from imported opcode dictionary - jvpm_dict,
@@ -79,17 +80,7 @@ class OpCodes():
         while index < len(self.opcodes):
             opcall = jvpm_dict.get_opcode(self.opcodes[index])
             print("Bytecode " + self.opcodes[index] + ' = Opcode: ' + opcall)
-                
-            # Im able to call the method in the new Methods() class in methods.py using the
-            # opcode name,
-            # method_call.iconst_1()
-                
-            # but when I try to call using the "opcall" variable name it fails, its trying to
-            # send "opcall" to the new Method() class instead of the value of opcall - iconst_1. 
-            # method_call.opcall()
-        
             result = getattr(Methods(), opcall)()
-        
             index += 1
         print()
         # return
