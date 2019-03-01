@@ -5,7 +5,7 @@ S = stack.Stack()
 class Methods():
     """class of methods called from the main, using method names retrieved from jvpm_dict.py"""
     def __init__(self):
-        OPERANDS = [0]
+    OPERANDS = [0]
 
     # def i2b():
     #     print('i2b')
