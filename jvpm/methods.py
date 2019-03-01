@@ -293,8 +293,9 @@ class Methods():
         popped = S.pop()
         OPERANDS.insert(3, popped)
         print("istore_3: Popped " + str(popped) +
-              " from Stack and stored in OPERANDS[3] in jvpm_methods.py,"
-              "\n>>>>>>>>>>>>>>>>>>>>>>>> c = " + str(popped) + " <<<<<<<<<<<<<<<<<<<<<<<<<<<")
+              " from Stack and stored in OPERANDS[3] in jvpm_methods.py,")
+        print(OPERANDS)
+        print("\n>>>>>>>>>>>>>>>>>>>>>>>> c = " + str(popped) + " <<<<<<<<<<<<<<<<<<<<<<<<<<<")
         print(">>>> Top of Stack is now " + str(S.size()) + ".")
 
     def isub():
