@@ -158,25 +158,25 @@ class Methods():
 
     def iload_0(self):
         """iload: push variable[0] to the Stack"""
-        pushing = OPERANDS[0]
+        pushing = self.OPERANDS[0]
         S.push(pushing)
         print('iload_0: Load OPERANDS[0] on the Stack for processing.')
 
     def iload_1(self):
         """iload: push variable[1] to the Stack"""
-        pushing = OPERANDS[1]
+        pushing = self.OPERANDS[1]
         S.push(pushing)
         print('iload_1: Load OPERANDS[1] on the Stack for processing.')
 
     def iload_2(self):
         """iload: push variable[2] to the Stack"""
-        pushing2 = OPERANDS[2]
+        pushing2 = self.OPERANDS[2]
         S.push(pushing2)
         print('iload_2: Load OPERANDS[2] on the Stack for processing.')
 
     def iload_3(self):
         """iload: push variable[3] to the Stack"""
-        pushing3 = OPERANDS[3]
+        pushing3 = self.OPERANDS[3]
         S.push(pushing3)
         print('iload_3: Load OPERANDS[3] on the Stack for processing.')
 
