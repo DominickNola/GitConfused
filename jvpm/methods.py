@@ -159,25 +159,25 @@ class Methods():
 
     def iload_0(self):
         """iload: push variable[0] to the Stack"""
-        pushing = self.OPERANDS[0]
+        pushing = OPERANDS[0]
         S.push(pushing)
         print('iload_0: Load OPERANDS[0] on the Stack for processing.')
 
     def iload_1(self):
         """iload: push variable[1] to the Stack"""
-        pushing = self.OPERANDS[1]
+        pushing = OPERANDS[1]
         S.push(pushing)
         print('iload_1: Load OPERANDS[1] on the Stack for processing.')
 
     def iload_2(self):
         """iload: push variable[2] to the Stack"""
-        pushing2 = self.OPERANDS[2]
+        pushing2 = OPERANDS[2]
         S.push(pushing2)
         print('iload_2: Load OPERANDS[2] on the Stack for processing.')
 
     def iload_3(self):
         """iload: push variable[3] to the Stack"""
-        pushing3 = self.OPERANDS[3]
+        pushing3 = OPERANDS[3]
         S.push(pushing3)
         print('iload_3: Load OPERANDS[3] on the Stack for processing.')
 
@@ -267,15 +267,15 @@ class Methods():
     def istore_0():
         """istore_0: store int value into OPERANDS[0]"""
         popped = S.pop()
-        self.OPERANDS.pop(0) # remove the assigned 0 from the [0]position
-        self.OPERANDS.insert(0, popped)
+        OPERANDS.pop(0) # remove the assigned 0 from the [0]position
+        OPERANDS.insert(0, popped)
         print("istore_0: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[0] in jvpm_methods.py.")
 
     def istore_1(self):
         """istore_1: store int value into OPERANDS[1]"""
         popped = S.pop()
-        self.OPERANDS.insert(1, popped)
+        OPERANDS.insert(1, popped)
         print("istore_1: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[1] in jvpm_methods.py.")
         print(self.OPERANDS)
@@ -283,7 +283,7 @@ class Methods():
     def istore_2(self):
         """istore_2: store int value into OPERANDS[2]"""
         popped = S.pop()
-        self.OPERANDS.insert(2, popped)
+        OPERANDS.insert(2, popped)
         print("istore_2: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[2] in jvpm_methods.py.")
         print(self.OPERANDS)
@@ -291,7 +291,7 @@ class Methods():
     def istore_3(self):
         """istore_3: store int value into OPERANDS[3]"""
         popped = S.pop()
-        self.OPERANDS.insert(3, popped)
+        OPERANDS.insert(3, popped)
         print("istore_3: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[3] in jvpm_methods.py,"
               "\n>>>>>>>>>>>>>>>>>>>>>>>> c = " + str(popped) + " <<<<<<<<<<<<<<<<<<<<<<<<<<<")
