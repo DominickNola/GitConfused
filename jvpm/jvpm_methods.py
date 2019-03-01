@@ -17,74 +17,73 @@ def opcode_methods(argument):
     # Array of arguments from the main for istore and iload
     # arguments = []
     token_dict = {
-#         "i2b": i2b,              # convert an int into a byte
-#         "i2c": i2c,              # convert an int into a character
-#         "i2d": i2d,              # convert an int into a double
-#         "i2f": i2f,              # convert an int into a float
-#         "i2l": i2l,              # convert an int into a long
-#         "i2s": i2s,              # convert an int into a short
-        "iadd": iadd,              # add two ints
-#         "iaload": method11,          # load an int from an array
-        "iand": iand,          # perform a bitwise AND on two integers
-#         "iastore": iastore,         # store an int into an array
-        "iconst_m1": iconst_m1,    # load the int value -1 onto the stack
-        "iconst_0": iconst_0,      # load the int value 0 onto the stack
-        "iconst_1": iconst_1,      # load the int value 1 onto the stack
-        "iconst_2": iconst_2,      # load the int value 2 onto the stack
-        "iconst_3": iconst_3,      # load the int value 3 onto the stack
-        "iconst_4": iconst_4,      # load the int value 4 onto the stack
-        "iconst_5": iconst_5,      # load the int value 5 onto the stack
-        "idiv": idiv,              # divide two integers
-#         "if_acmpeq": if_acmpeq,       # if references are equal branch to instruction
-#         "if_acmpene": if_acmpene,      # if references are not equal branch to instruction
-#         "if_icmpeq": if_icmpeq,       # if ints are equal, branch
-#         "if_icmpge": if_icmpge,       # if value1 >= value2, branch
-#         "if_icmpgt": if_icmpgt,       # if value1 > value2, branch
-#         "if_icmple": if_icmple,       # if value1 <= value 2, branch
-#         "if_icmplt": if_icmplt,       # if value1 < value2, branch
-#         "if_icmpne": if_icmpne,       # if value1 != value2, branch
-#         "ifeq": ifeq,            # if value is 0, branch
-#         "ifge": ifge,            # if value >= 0, branch
-#         "ifgt": ifgt,            # if value > 0, branch
-#         "ifle": ifle,            # if value <= 0, branch
-#         "iflt": iflt,            # if value < 0, branch
-#         "ifne": ifne,            # if value != 0 , branch
-#         "ifnonnull": ifnonnull,   # if value is not null, branch
-#         "ifnull": ifnull,         # if value is null, branch
-         "iinc": iinc,              # increment local variable #index by signed byte const
-#         "iload": iload,           # load an int value from a local variabl #index
-         "iload_0": iload_0,       # load an int value from local array variable[0]
-         "iload_1": iload_1,       # load an int value from local array variable[1]
-         "iload_2": iload_2,       # load an int value from local variable[2]
-         "iload_3": iload_3,       # load an int value from local variable[3]
-#         "impdep1": impdep1,       # reserved for implementation dependent operations,
-#                                   # should not appear in any class
-#         "impdep2": impdep2,       # reserved for implementation dependent operations,
+#         "91": i2b,              # convert an int into a byte
+#         "92": i2c,              # convert an int into a character
+#         "87": i2d,              # convert an int into a double
+#         "86": i2f,              # convert an int into a float
+#         "85": i2l,              # convert an int into a long
+#         "93": i2s,              # convert an int into a short
+        "60": iadd,              # add two ints
+#         "2e": method11, #iaload          # load an int from an array
+        "7e": iand,          # perform a bitwise AND on two integers
+#         "4f": iastore,         # store an int into an array
+        "02": iconst_m1,    # load the int value -1 onto the stack
+        "03": iconst_0,      # load the int value 0 onto the stack
+        "04": iconst_1,      # load the int value 1 onto the stack
+        "05": iconst_2,      # load the int value 2 onto the stack
+        "06": iconst_3,      # load the int value 3 onto the stack
+        "07": iconst_4,      # load the int value 4 onto the stack
+        "08": iconst_5,      # load the int value 5 onto the stack
+        "6c": idiv,              # divide two integers
+#         "a5": if_acmpeq,       # if references are equal branch to instruction
+#         "a6": if_acmpene,      # if references are not equal branch to instruction
+#         "9f": if_icmpeq,       # if ints are equal, branch
+#         "a2": if_icmpge,       # if value1 >= value2, branch
+#         "a3": if_icmpgt,       # if value1 > value2, branch
+#         "a4": if_icmple,       # if value1 <= value 2, branch
+#         "a1": if_icmplt,       # if value1 < value2, branch
+#         "a0": if_icmpne,       # if value1 != value2, branch
+#         "99": ifeq,            # if value is 0, branch
+#         "9c": ifge,            # if value >= 0, branch
+#         "9d": ifgt,            # if value > 0, branch
+#         "9e": ifle,            # if value <= 0, branch
+#         "9b": iflt,            # if value < 0, branch
+#         "9a": ifne,            # if value != 0 , branch
+#         "c7": ifnonnull,   # if value is not null, branch
+#         "c6": ifnull,         # if value is null, branch
+#         "84": iinc,              # increment local variable #index by signed byte const
+#         "15": iload,           # load an int value from a local variabl #index
+         "1a": iload_0,       # load an int value from local array variable[0]
+         "1b": iload_1,       # load an int value from local array variable[1]
+         "1c": iload_2,       # load an int value from local variable[2]
+         "1d": iload_3,       # load an int value from local variable[3]
+#         "fe": impdep1,       # reserved for implementation dependent operations,
+#         "ff": impdep2,       # reserved for implementation dependent operations,
 #                                   # should not appear
-        "imul": imul,              # multiply two integers
-        "ineg": ineg,          # negate int
-#         "instanceof": instanceof,      # determines if objectref is of a given type
-#         "invokedynamic": invokedynamic,   # invoke a dynamic method and put the result on Stack
-#         "invokeinterface": invokeinterface, # invoke an interface method on object object ref and
+        "68": imul,              # multiply two integers
+        "74": ineg,  #ineg        # negate int
+#         "c1": instanceof,      # determines if objectref is of a given type
+#         "ba": invokedynamic,   # invoke a dynamic method and put the result on Stack
+#         "b9": invokeinterface, # invoke an interface method on object object ref and
 #                                      # puts results on the stack
-#         "invokespecial": invokespecial,   # invoke instance method on objectref and
+#         "b7": invokespecial,   # invoke instance method on objectref and
 #                                      # puts result on the stack
-#         "invokestatic": invokestatic,    # invoke static method and puts result on the stack
-#         "invokevirtual": invokevirtual,   # invoke virtual method on objectref and
+#         "b8": invokestatic,    # invoke static method and puts result on the stack
+#         "b6": invokevirtual,   # invoke virtual method on objectref and
 #                                      # puts result on the stack
-        "ior": ior,           # bitwise int OR
-        "irem": irem,          # logical in remainder
-#         "ireturn": ireturn,       # returner an integer from a method
-        "ishl": ishl,          # int shift left
-        "ishr": ishr,          # int arithmetic shift right
-        "istore": istore_3,        # store int value into variable #index
-        "istore_0": istore_0,      # store int value into VARIABLE[0]
-        "istore_1": istore_1,      # store int value into VARIABLE[1]
-        "istore_2": istore_2,      # store int value into VARIABLE[2]
-        "istore_3": istore_3,      # store int value into VARIABLE[3]
-        "isub": isub,              # int subtract
-        "iushr": iushr,         # int logical shift right
-        "ixor": ixor          # xor
+        "80": ior,           # bitwise int OR
+        "70": irem,          # logical in remainder
+#         "ac": ireturn,       # returner an integer from a method
+        "78": ishl,          # int shift left
+        "7a": ishr,   #ishr       # int arithmetic shift right
+        #"36": istore,        # store int value into variable #index
+        "3b": istore_0,      # store int value into VARIABLE[0]
+        "3c": istore_1,      # store int value into VARIABLE[1]
+        "3d": istore_2,      # store int value into VARIABLE[2]
+        "3e": istore_3,      # store int value into VARIABLE[3]
+        "64": isub,              # int subtract
+        "7c": iushr,         # int logical shift right
+        "82": ixor          # xor
     }
     # get the method name from the token_dict dictionary
     method = token_dict.get(argument, lambda: "Invalid opcode")
@@ -97,19 +96,17 @@ def opcode_methods(argument):
 
     # Call the Method.
     method()
+    
 
 # ****************************************************************************************
 
 # def i2b():
-<<<<<<< HEAD
 #     print('i2b')
-=======
 #     https://www.delftstack.com/howto/python/how-to-convert-int-to-bytes-in-python-2-and-python-3/
 #     temp_int = S.pop()
 #     byte = bytes([temp_int])
 #     S.push(byte)
 #     print("i2b converts " + str(temp_int) + " to a byte: " + str(byte))
->>>>>>> 5e9723e0280f08daaf27f9572c0be4c6957dd58e
 
 # def i2c():
 #     print('i2c')
