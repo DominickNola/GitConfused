@@ -80,6 +80,7 @@ class OpCodes():
             # jvpm_methods.opcode_methods(opcall)
             # Im able to call the method in Methods() class in methods.py using the opcade name
             method_call.iconst_3()
+            method_call.(self.opcodes[0])()
             # but when I try to call opcall it fails, even though opcall = iconst_1.
             # method_call.opcall()
             index += 1
