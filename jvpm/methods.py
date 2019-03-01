@@ -168,12 +168,14 @@ class Methods():
         pushing = OPERANDS[1]
         S.push(pushing)
         print('> 1b = iload_1: Push OPERANDS[1] on the Stack for processing.')
+        print(">>>> Top of Stack is now " + str(S.peek()) + ".")
 
     def iload_2(self):
         """iload: push variable[2] to the Stack"""
         pushing2 = OPERANDS[2]
         S.push(pushing2)
         print('> 1c = iload_2: Push OPERANDS[2] on the Stack for processing.')
+        print(">>>> Top of Stack is now " + str(S.peek()) + ".")
 
     def iload_3(self):
         """iload: push variable[3] to the Stack"""
@@ -279,6 +281,7 @@ class Methods():
         print("> 3c = istore_1: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[1] in methods.py.")
         print("OPERANDS[] = " + str(OPERANDS))
+        print(">>>> Top of Stack is now " + str(S.peek()) + ".")
 
     def istore_2(self):
         """istore_2: store int value into OPERANDS[2]"""
@@ -287,6 +290,7 @@ class Methods():
         print("> 3d = istore_2: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[2] in methods.py.")
         print("OPERANDS[] = " + str(OPERANDS))
+        print(">>>> Top of Stack is now " + str(S.peek()) + ".")
 
     def istore_3(self):
         """istore_3: store int value into OPERANDS[3]"""
