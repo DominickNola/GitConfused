@@ -79,21 +79,25 @@ class Methods():
         """iconst_2: load the int value 2 onto the stack"""
         S.push(2)
         print("iconst_2: Pushed " + str(S.peek()) + " to Stack in jvpm_methods.py.")
+        return S.peek()
 
     def iconst_3(self):
         """iconst_3: load the int value 3 onto the stack"""
         S.push(3)
         print("> 06 = iconst_3: Pushed " + str(S.peek()) + " to Stack in jvpm_methods.py.")
+        return S.peek()
 
     def iconst_4(self):
         """iconst_4: load the int value 4 onto the stack"""
         S.push(4)
         print('"iconst_4: Pushed " + str(S.peek()) + " to Stack in jvpm_methods.py."')
+        return S.peek()
 
     def iconst_5(self):
         """iconst_5: load the int value 5 onto the stack"""
         S.push(5)
         print('"iconst_5: Pushed " + str(S.peek()) + " to Stack in jvpm_methods.py."')
+        return S.peek()
 
     def idiv(self):
         """idiv: divide two numbers"""
@@ -165,6 +169,7 @@ class Methods():
         pushing = OPERANDS[0]
         S.push(pushing)
         print('iload_0: Push OPERANDS[0] on the Stack for processing.')
+        return S.peek()
 
     def iload_1(self):
         """iload: push variable[1] to the Stack"""
@@ -172,6 +177,7 @@ class Methods():
         S.push(pushing)
         print('> 1b = iload_1: Push OPERANDS[1] on the Stack for processing.')
         print(">>>> Top of Stack is now " + str(S.peek()) + ".")
+        return S.peek()
 
     def iload_2(self):
         """iload: push variable[2] to the Stack"""
@@ -179,12 +185,14 @@ class Methods():
         S.push(pushing2)
         print('> 1c = iload_2: Push OPERANDS[2] on the Stack for processing.')
         print(">>>> Top of Stack is now " + str(S.peek()) + ".")
+        return S.peek()
 
     def iload_3(self):
         """iload: push variable[3] to the Stack"""
         pushing3 = OPERANDS[3]
         S.push(pushing3)
         print('iload_3: Push OPERANDS[3] on the Stack for processing.')
+        return S.peek()
 
     # def impdep1():
     #     print('impdep1')
@@ -276,6 +284,7 @@ class Methods():
         OPERANDS.insert(0, popped)
         print("istore_0: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[0] in methods.py.")
+        return OPERANDS[0]
 
     def istore_1(self):
         """istore_1: store int value into OPERANDS[1]"""
@@ -284,6 +293,7 @@ class Methods():
         print("> 3c = istore_1: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[1] in methods.py.")
         print("OPERANDS[] = " + str(OPERANDS))
+        return OPERANDS[1]
 
     def istore_2(self):
         """istore_2: store int value into OPERANDS[2]"""
@@ -292,6 +302,7 @@ class Methods():
         print("> 3d = istore_2: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[2] in methods.py.")
         print("OPERANDS[] = " + str(OPERANDS))
+        return OPERANDS[2]
 
     def istore_3(self):
         """istore_3: store int value into OPERANDS[3]"""
@@ -302,6 +313,7 @@ class Methods():
         print("OPERANDS[] = " + str(OPERANDS))
         print(">>>>>>>>>>>>>>>>>>>>>>>> c = " + str(popped) + " <<<<<<<<<<<<<<<<<<<<<<<<<<<")
         print(">>>> Size of Stack is now " + str(S.size()) + ".")
+        return OPERANDS[3]
 
     def isub():
         """isub: subtract two ints"""
