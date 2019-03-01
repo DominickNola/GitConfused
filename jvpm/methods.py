@@ -278,7 +278,7 @@ class Methods():
         OPERANDS.insert(1, popped)
         print("istore_1: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[1] in jvpm_methods.py.")
-        print("OPERANDS[] = " str(OPERANDS))
+        print("OPERANDS[] = " + str(OPERANDS))
 
     def istore_2(self):
         """istore_2: store int value into OPERANDS[2]"""
@@ -286,7 +286,7 @@ class Methods():
         OPERANDS.insert(2, popped)
         print("istore_2: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[2] in jvpm_methods.py.")
-        print("OPERANDS[] = " str(OPERANDS))
+        print("OPERANDS[] = " + str(OPERANDS))
 
     def istore_3(self):
         """istore_3: store int value into OPERANDS[3]"""
@@ -294,7 +294,7 @@ class Methods():
         OPERANDS.insert(3, popped)
         print("istore_3: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[3] in jvpm_methods.py,")
-        print("OPERANDS[] = " str(OPERANDS))
+        print("OPERANDS[] = " + str(OPERANDS))
         print(">>>>>>>>>>>>>>>>>>>>>>>> c = " + str(popped) + " <<<<<<<<<<<<<<<<<<<<<<<<<<<")
         print(">>>> Top of Stack is now " + str(S.size()) + ".")
 
