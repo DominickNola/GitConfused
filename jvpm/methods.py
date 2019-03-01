@@ -6,6 +6,7 @@ self.OPERANDS = [0]
 class Methods():
     """class of methods called from the main, using method names retrieved from jvpm_dict.py"""
     def __init__(self):
+        self.VARIABLES = []
     
     # def i2b():
     #     print('i2b')
