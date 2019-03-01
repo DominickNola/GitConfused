@@ -59,9 +59,10 @@ class OpCodes():
         """
 
     def dict_search(self):
-        
         """Search the jvpm.dict.py(dictionary) file for the bytecode/opcode translation and
         implement if found."""
+	
+	# Call methods using the dictionary in jvpm_methods.py:
 	# Hex to Opcode from imported opcode dictionary - jvpm_dict,
         # implemented using imported method dictionary - jvpm_methods.
         print("\nBytecodes from the .class file: " + str(self.opcodes))
@@ -73,7 +74,7 @@ class OpCodes():
             index += 1
         print()
         
-        # Call methods from Methods() class in methods.py
+        # Call methods from Methods() class in methods.py:
         print("Using the new Methods() class in methods.py for unittest integration:")
         print("\nBytecodes from .class file: " + str(self.opcodes))
         index = 0
