@@ -4,6 +4,7 @@ import stack
 class Methods():
     """class of methods called from the main using bytecode"""
     def __init__(self):
+        S = stack.Stack()
         OPERANDS = [0]
 
     # def i2b():
