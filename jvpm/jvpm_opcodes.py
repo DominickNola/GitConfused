@@ -88,7 +88,7 @@ class OpCodes():
             # send "opcall" to the new Method() class instead of the value of opcall - iconst_1. 
             # method_call.opcall()
         
-            result = getattr(methods, opcall)()
+            result = getattr(Methods(), opcall)()
         
             index += 1
         print()
