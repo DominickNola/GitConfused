@@ -4,6 +4,7 @@
 from bitstring import ConstBitStream
 #import jvpm_dict    # import external opcode dictionary
 import jvpm_methods # import external method dictionary
+from methods import Methods
 
 # pylint: disable = W0105, C0122, R0903
 
@@ -40,6 +41,7 @@ class OpCodes():
     """Parse Opcodes into an array from the .class file, search the external dictionary of
     opcodes, and implement the methods using the external dictionary of methods"""
     def __init__(self):
+        method_call = Methods()
         # List of the test1.java(math) opcodes.
 #         self.opcodes = ['04', '3c', '05', '3d', '1b', '1c', '60', '1c', '68', '1c', '6c', '1c',
 #                         '64', '3e']
@@ -66,6 +68,15 @@ class OpCodes():
             opcall = jvpm_methods.opcode_methods(self.opcodes[index])
             #print("Bytecode " + self.opcodes[index] + ' = Opcode: ' + opcall)
             opcall
+            index += 1
+        print()
+        # Call methods from Methods() class in methods.py
+        print("\nBytecodes from .class file: " + str(self.opcodes))
+        index = 0
+        while index < len(self.opcodes):
+            opcall = jvpm_dict.get_opcode(self.opcodes[index])
+            print("Bytecode " + self.opcodes[index] + ' = Opcode: ' + opcall)
+            method_call.opcall()
             index += 1
         print()
         # return
