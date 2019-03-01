@@ -281,7 +281,6 @@ class Methods():
         print("> 3c = istore_1: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[1] in methods.py.")
         print("OPERANDS[] = " + str(OPERANDS))
-        print(">>>> Top of Stack is now " + str(S.peek()) + ".")
 
     def istore_2(self):
         """istore_2: store int value into OPERANDS[2]"""
@@ -290,7 +289,6 @@ class Methods():
         print("> 3d = istore_2: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[2] in methods.py.")
         print("OPERANDS[] = " + str(OPERANDS))
-        print(">>>> Top of Stack is now " + str(S.peek()) + ".")
 
     def istore_3(self):
         """istore_3: store int value into OPERANDS[3]"""
@@ -300,7 +298,7 @@ class Methods():
               " from Stack and stored in OPERANDS[3] in methods.py,")
         print("OPERANDS[] = " + str(OPERANDS))
         print(">>>>>>>>>>>>>>>>>>>>>>>> c = " + str(popped) + " <<<<<<<<<<<<<<<<<<<<<<<<<<<")
-        print(">>>> Top of Stack is now " + str(S.size()) + ".")
+        print(">>>> Size of Stack is now " + str(S.size()) + ".")
 
     def isub():
         """isub: subtract two ints"""
