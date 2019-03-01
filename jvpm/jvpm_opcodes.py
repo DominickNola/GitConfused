@@ -78,7 +78,7 @@ class OpCodes():
             opcall = jvpm_dict.get_opcode(self.opcodes[index])
             print("Bytecode " + self.opcodes[index] + ' = Opcode: ' + opcall)
                 
-            # Im able to call the method in Methods() class in methods.py using the opcode name
+            # Im able to call the method in the new Methods() class in methods.py using the opcode name
             method_call.iconst_3()
                 
             # but when I try to call "opcall" it fails, its trying to send "opcall" to the Method()
