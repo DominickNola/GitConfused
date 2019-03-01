@@ -82,7 +82,7 @@ class OpCodes():
                 
             # Im able to call the method in the new Methods() class in methods.py using the
             # opcode name,
-            method_call.iconst_1()
+            # method_call.iconst_1()
                 
             # but when I try to call using the "opcall" variable name it fails, its trying to
             # send "opcall" to the new Method() class instead of the value of opcall - iconst_1. 
