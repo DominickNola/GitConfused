@@ -72,6 +72,7 @@ class OpCodes():
         print()
         
         # Call methods from Methods() class in methods.py
+        print("Using the new Methods() class in methods.py for unittest integration:")
         print("\nBytecodes from .class file: " + str(self.opcodes))
         index = 0
         while index < len(self.opcodes):
