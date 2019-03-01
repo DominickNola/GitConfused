@@ -70,6 +70,7 @@ class OpCodes():
             opcall
             index += 1
         print()
+        
         # Call methods from Methods() class in methods.py
         print("\nBytecodes from .class file: " + str(self.opcodes))
         index = 0
@@ -77,6 +78,7 @@ class OpCodes():
             opcall = jvpm_dict.get_opcode(self.opcodes[index])
             print("Bytecode " + self.opcodes[index] + ' = Opcode: ' + opcall)
             jvpm_methods.opcode_methods(opcall)
+            method_call.iconst_3()
             index += 1
         print()
         # return
