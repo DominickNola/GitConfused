@@ -82,7 +82,7 @@ class OpCodes():
             method_call.iconst_3()
                 
             # but when I try to call "opcall" it fails, its trying to send "opcall" to the Method()
-	    # instead of the value of opcall. 
+	    # class instead of the value of opcall - iconst_3. 
             # method_call.opcall()
         
             index += 1
