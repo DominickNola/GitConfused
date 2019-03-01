@@ -1,11 +1,11 @@
 """import stack.py"""
 import stack
 S = stack.Stack()
+self.OPERANDS = [0]
 
 class Methods():
     """class of methods called from the main, using method names retrieved from jvpm_dict.py"""
     def __init__(self):
-        self.OPERANDS = [0]
     
     # def i2b():
     #     print('i2b')
