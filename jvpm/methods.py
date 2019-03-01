@@ -276,7 +276,7 @@ class Methods():
         """istore_1: store int value into OPERANDS[1]"""
         popped = S.pop()
         OPERANDS.insert(1, popped)
-        print("istore_1: Popped " + str(popped) +
+        print("3c = istore_1: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[1] in jvpm_methods.py.")
         print("OPERANDS[] = " + str(OPERANDS))
 
@@ -284,7 +284,7 @@ class Methods():
         """istore_2: store int value into OPERANDS[2]"""
         popped = S.pop()
         OPERANDS.insert(2, popped)
-        print("istore_2: Popped " + str(popped) +
+        print("3d = istore_2: Popped " + str(popped) +
               " from Stack and stored in OPERANDS[2] in jvpm_methods.py.")
         print("OPERANDS[] = " + str(OPERANDS))
 
