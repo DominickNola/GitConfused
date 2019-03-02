@@ -339,7 +339,7 @@ class Test_Op_Methods(unittest.TestCase):
         a.ishl()
         b = a.stack.pop()
         self.assertEqual(b, 4)
-    """
+    
     def test_ishr(self):
         a = OpCodeMethods()
         
@@ -347,7 +347,7 @@ class Test_Op_Methods(unittest.TestCase):
         a.stack.push(1)
         a.ishr()
         b = a.stack.pop()
-        self.assertEqual(b, 2)
+        self.assertEqual(b, 1)
         
         a.stack.push(-1)
         a.stack.push(1)
@@ -366,7 +366,7 @@ class Test_Op_Methods(unittest.TestCase):
         a.ishr()
         b = a.stack.pop()
         self.assertEqual(b, 0)
-    """
+    
     def test_istore_0(self):
         a = OpCodeMethods()
         a.stack.push(3)
