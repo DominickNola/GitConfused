@@ -1,7 +1,7 @@
 2/23/19
 -Questions to bring up in Monday team meeting.
 -Breaking down user stories into story points.
--Research on stacks in python. 
+-Research on stacks in python.
 Stack info:
 http://interactivepython.org/courselib/static/pythonds/BasicDS/ImplementingaStackinPython.html
 
@@ -40,3 +40,35 @@ myDict = {
 def myMain(name):
     myDict[name]()
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3/4/19
+
+https://gist.github.com/tasdikrahman/2bdb3fb31136a3768fac
+
+Moved the test folder that contained unittests to under GitConfused.  Based on research done, under the project there should be two folders.  one
+for the code you are writing, and one where you will put your unit tests.
+
+new_project
+├── antigravity
+│   ├── __init__.py         # make it a package
+│   └── antigravity.py
+└── test
+    ├── __init__.py         # also make test a package
+    └── test_antigravity.py
+
+
+GitConfused
+├── jvpm
+│   ├── __init__.py         # make it a package
+│   └── jvpm.py
+└── test
+    ├── __init__.py         # also make test a package
+    └── test_jvpm.py
+
+Trying to run the unittest with
+
+python3 -m unittest test.test_jvpm_methods
+
+Comes up with ModuleNotFoundError: No module named 'jvpm_methods'
+Learned that because our methods do not actually take an input and just execute the code
+by doing stack methods, we need to create a stack within each test method.
+That way it is able to test itself against the stack that we provide.
