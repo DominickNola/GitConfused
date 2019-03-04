@@ -42,11 +42,12 @@ class OpCodeMethods():
     def iconst_1(self):
         """iconst_1: load the int value 1 onto the stack"""
         self.stack.push(1)
-        print(self.stack.peek())
         print("iconst_1: Pushed " + str(self.stack.peek()) + " to Stack in jvpm_methods.py.")
 
     def iconst_2(self):
+         """iconst_2: load the int value 2 onto the stack"""
         self.stack.push(2)
+        print("iconst_2: Pushed " + str(self.stack.peek()) + " to Stack in jvpm_methods.py.")
 
     def iconst_3(self):
         """iconst_3: load the int value 3 onto the stack"""
@@ -54,7 +55,9 @@ class OpCodeMethods():
         print("iconst_3: Pushed " + str(self.stack.peek()) + " to Stack in jvpm_methods.py.")
 
     def iconst_4(self):
+         """iconst_4: load the int value 4 onto the stack"""
         self.stack.push(4)
+        print("iconst_4: Pushed " + str(self.stack.peek()) + " to Stack in jvpm_methods.py.")
 
     def iconst_5(self):
         self.stack.push(5)
@@ -133,7 +136,6 @@ class OpCodeMethods():
         """istore_1: store int value into VARIABLES[1]"""
         popped = self.stack.pop()
         self.VARIABLES.insert(1, popped)
-        print(self.VARIABLES)
         print("istore_1: Popped " + str(popped) +
               " from Stack and stored in VARIABLES[1] in jvpm_methods.py.")
 
