@@ -89,6 +89,7 @@ if '__main__' == __name__:
           '\n  opcode dictionary for bytecode and pull opcode. If found, send opcode to'
           '\n  imported method dictionary to implement the method:___'
           '\n\n<<<< Implementation of iadd, imul, idiv, and isub. >>>>'
+          '\ntest1_math.java
           '\nint a = 1;'
           '\nint b = 2;'
           '\nint c = ((((a + b) * b) / b) - b);)\n')
