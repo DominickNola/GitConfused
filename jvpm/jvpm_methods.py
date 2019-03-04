@@ -118,7 +118,7 @@ class OpCodeMethods():
     def istore_1(self):
         popped = self.stack.pop()
         self.VARIABLES.insert(1, popped)
-        print(self.VARIABLES[1])
+        print(self.VARIABLES.peek())
         print("ran istore_1")
 
 
