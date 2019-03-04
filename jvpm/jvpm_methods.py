@@ -143,7 +143,6 @@ class OpCodeMethods():
     def istore_2(self):
         popped = self.stack.pop()
         self.VARIABLES.insert(2, popped)
-        print(self.VARIABLES)
         print("istore_2: Popped " + str(popped) +
               " from Stack and stored in VARIABLES[2] in jvpm_methods.py.")
 
