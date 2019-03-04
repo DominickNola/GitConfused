@@ -214,4 +214,4 @@ class OpCodeMethods():
         # get function from spinner
         method = OpCodeMethods.switcher.get(argument, "invalid")
         # execute function
-        method(self)
+        return method(self)
