@@ -87,7 +87,7 @@ if '__main__' == __name__:
 
     print('\n2) ___Parse, pull, and assign method bytecodes to an array, search imported '
           '\n  opcode dictionary for bytecode and pull opcode. If found, send opcode to'
-          '\n  imported method dictionary to implement the method:___')
+          '\n  imported method dictionary to implement the method:___\n')
 
     O = OpCodes()
     O.dict_search(OpCodeMethods()) # will need to pass through the oject that holds all the methods
