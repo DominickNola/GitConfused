@@ -143,7 +143,7 @@ class OpCodeMethods():
         print("istore_3: Popped " + str(popped) +
           " from Stack and stored in VARIABLES[3] in jvpm_methods.py,"
           "\n>>>>>>>>>>>>>>>>>>>>>>>> c = " + str(popped) + " <<<<<<<<<<<<<<<<<<<<<<<<<<<")
-    print(">>>> Top of Stack is now " + str(self.stack.size()) + ".")
+        print(">>>> Top of Stack is now " + str(self.stack.size()) + ".")
 
     def isub(self):
         var2 = self.stack.pop()
