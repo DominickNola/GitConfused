@@ -70,16 +70,16 @@ class OpCodeMethods():
     def iload_1(self):
         pushing = self.VARIABLES[1]
         self.stack.push(pushing)
-        print("ran iload_1")
+        print('iload_1: Load VARIABLES[1] on the Stack for processing.')
 
     def iload_2(self):
         pushing2 = self.VARIABLES[2]
         self.stack.push(pushing2)
-        print("ran iload_2")
+        print('iload_2: Load VARIABLES[2] on the Stack for processing.')
 
     def iload_3(self):
         pushing3 = self.VARIABLES[3]
-        self.stack.push(pushing3)
+        print('iload_3: Load VARIABLES[3] on the Stack for processing.')
 
     def imul(self):
         var2 = self.stack.pop()
@@ -130,12 +130,14 @@ class OpCodeMethods():
         popped = self.stack.pop()
         self.VARIABLES.insert(2, popped)
         print(self.VARIABLES)
-        print("ran istore_2")
+        print("istore_2: Popped " + str(popped) +
+          " from Stack and stored in VARIABLES[2] in jvpm_methods.py.")
 
     def istore_3(self):
         popped = self.stack.pop()
         self.VARIABLES.insert(3, popped)
-        print("ran istore_3")
+        print("istore_3: Popped " + str(popped) +
+          " from Stack and stored in VARIABLES[3] in jvpm_methods.py.")
 
     def isub(self):
         var2 = self.stack.pop()
