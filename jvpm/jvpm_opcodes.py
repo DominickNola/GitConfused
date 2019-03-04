@@ -91,7 +91,7 @@ if '__main__' == __name__:
           '\n\n<<<< Implementation of iadd, imul, idiv, and isub. >>>>'
           '\nint a = 1;'
           '\nint b = 2;'
-          '\nint c = ((((a + b) * b) / b) - b);)\n'
+          '\nint c = ((((a + b) * b) / b) - b);)\n')
 
     O = OpCodes()
     O.dict_search(OpCodeMethods()) # will need to pass through the oject that holds all the methods
