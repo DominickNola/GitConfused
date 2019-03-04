@@ -90,7 +90,7 @@ if '__main__' == __name__:
           '\n  imported method dictionary to implement the method:___')
 
     O = OpCodes()
-    #O.dict_search() will need to pass through the oject that holds all the methods
+    O.dict_search() # will need to pass through the oject that holds all the methods
     # also need to have actual constant that are held in the object with the opcall methods
 
 
