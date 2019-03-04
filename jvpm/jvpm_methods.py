@@ -66,7 +66,7 @@ class OpCodeMethods():
         print("> idiv: Popped (" + str(var1) + ") and (" + str(var2) +
           ") from the Stack, assigned to local variables, \ndivided the two,"
           " and pushed result back to Stack.")
-    print(">>>> Top of Stack is now " + str(self.stack.peek()) + ".")
+        print(">>>> Top of Stack is now " + str(self.stack.peek()) + ".")
 
     def iinc(self):
         print("iinc: not needed for this sprint")
