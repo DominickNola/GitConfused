@@ -16,7 +16,7 @@ class OpCodeMethods():
 
     def __init__(self):
         self.stack = Stack()
-        self.VARIABLES = [0]
+        self.VARIABLES = []
 
     def iadd(self):
         """iadd: add two ints"""
