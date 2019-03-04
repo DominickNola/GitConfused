@@ -37,6 +37,7 @@ class OpCodeMethods():
 
     def iconst_1(self):
         self.stack.push(1)
+        print(self.stack.peek())
         print("ran iconst_1")
 
     def iconst_2(self):
