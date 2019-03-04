@@ -131,7 +131,7 @@ class OpCodeMethods():
         self.VARIABLES.insert(1, popped)
         print(self.VARIABLES)
         print("istore_1: Popped " + str(popped) +
-          " from Stack and stored in VARIABLES[1] in jvpm_methods.py.")
+              " from Stack and stored in VARIABLES[1] in jvpm_methods.py.")
 
 
     def istore_2(self):
@@ -139,20 +139,24 @@ class OpCodeMethods():
         self.VARIABLES.insert(2, popped)
         print(self.VARIABLES)
         print("istore_2: Popped " + str(popped) +
-          " from Stack and stored in VARIABLES[2] in jvpm_methods.py.")
+              " from Stack and stored in VARIABLES[2] in jvpm_methods.py.")
 
     def istore_3(self):
         popped = self.stack.pop()
         self.VARIABLES.insert(3, popped)
         print("istore_3: Popped " + str(popped) +
-          " from Stack and stored in VARIABLES[3] in jvpm_methods.py,"
-          "\n>>>>>>>>>>>>>>>>>>>>>>>> c = " + str(popped) + " <<<<<<<<<<<<<<<<<<<<<<<<<<<")
+              " from Stack and stored in VARIABLES[3] in jvpm_methods.py,"
+              "\n>>>>>>>>>>>>>>>>>>>>>>>> c = " + str(popped) + " <<<<<<<<<<<<<<<<<<<<<<<<<<<")
         print(">>>> Top of Stack is now " + str(self.stack.size()) + ".")
 
     def isub(self):
         var2 = self.stack.pop()
         var1 = self.stack.pop()
         self.stack.push(var1 - var2)
+        print("> isub: Popped (" + str(var1) + ") and (" + str(var2) +
+              ") from the Stack, assigned to local variables, \nsubtracted the two,"
+              " and pushed result back to Stack.")
+        print(">>>> Top of Stack is now " + str(self.stack.peek()) + ".")
 
     def iushr(self):
         var2 = self.stack.pop()
