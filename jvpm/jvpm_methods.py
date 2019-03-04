@@ -46,8 +46,7 @@ class OpCodeMethods():
     def iconst_3(self):
         """iconst_3: load the int value 3 onto the stack"""
         self.stack.push(3)
-        print(self.stack.peek())
-        print("iconst_3: Pushed " + str(S.peek()) + " to Stack in jvpm_methods.py.")
+        print("iconst_3: Pushed " + str(self.stack.peek()) + " to Stack in jvpm_methods.py.")
 
     def iconst_4(self):
         self.stack.push(4)
