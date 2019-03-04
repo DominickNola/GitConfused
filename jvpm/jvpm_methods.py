@@ -23,6 +23,10 @@ class OpCodeMethods():
         var2 = self.stack.pop()
         var1 = self.stack.pop()
         self.stack.push(var1 + var2)
+        print("> iadd: Popped (" + str(var1) + ") and (" + str(var2) +
+          ") from the Stack, assigned to local variables, \nadded the two,"
+          " and pushed result back to Stack.")
+        print(">>>> Top of Stack is now " + str(self.stack.peek()) + ".")
 
     def iand(self):
         var2 = self.stack.pop()
