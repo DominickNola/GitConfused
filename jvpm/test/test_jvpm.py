@@ -353,7 +353,7 @@ class Test_Op_Methods(unittest.TestCase):
         a.stack.push(1)
         a.ishr()
         b = a.stack.pop()
-        self.asertEqual(b, -1)
+        self.assertEqual(b, -1)
         
         a.stack.push(5)
         a.stack.push(0)
