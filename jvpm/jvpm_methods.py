@@ -75,7 +75,7 @@ def opcode_methods(argument):
         "70": irem,          # logical in remainder
 #         "ac": ireturn,       # returner an integer from a method
         "78": ishl,          # int shift left
-        "7a": ishr,   #ishr       # int arithmetic shift right
+        "7a": ishr,          # int arithmetic shift right
         #"36": istore,        # store int value into variable #index
         "3b": istore_0,      # store int value into VARIABLE[0]
         "3c": istore_1,      # store int value into VARIABLE[1]
@@ -96,7 +96,7 @@ def opcode_methods(argument):
 
     # Call the Method.
     method()
-    
+
 
 # ****************************************************************************************
 
@@ -346,7 +346,7 @@ def ishl():
 
 
 def ishr():
-    """description here"""
+    """int arithmetic shift right"""
     var2 = S.pop()
     var1 = S.pop()
     S.push(var1 >> var2)
