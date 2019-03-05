@@ -128,7 +128,7 @@ class OpCodeMethods():
         var2 = self.stack.pop()
         var1 = self.stack.pop()
         self.stack.push(var1 << var2)
-        print("ishr: Popped both variables from the Stack and stored in local variables," 
+        print("ishl: Popped both variables from the Stack and stored in local variables," 
               "\nshifted var2 left by var1 = " + str(self.stack.peek()))
 
     def ishr(self):
