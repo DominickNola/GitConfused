@@ -85,10 +85,10 @@ if '__main__' == __name__:
           '\n  opcode dictionary for bytecode and pull opcode. If found, send opcode to'
           '\n  imported method dictionary to implement the method:___'
           '\n\n<<<< Implementation of iadd, imul, idiv, and isub. >>>>'
-          '\ntest1_math.java'
+          '\ntest2_logic.java'
           '\nint a = 1;'
           '\nint b = 2;'
-          '\nint c = ((((a + b) * b) / b) - b);)\n')
+          '\nint c = ((((a & b) >> b) << a) | a) % b) ^a);)
 
     O = OpCodes()
     O.dict_search(OpCodeMethods()) # will need to pass through the oject that holds all the methods
