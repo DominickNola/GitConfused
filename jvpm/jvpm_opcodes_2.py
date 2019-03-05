@@ -84,7 +84,7 @@ if '__main__' == __name__:
     print('\n2) ___Parse, pull, and assign method bytecodes to an array, search imported '
           '\n  opcode dictionary for bytecode and pull opcode. If found, send opcode to'
           '\n  imported method dictionary to implement the method:___'
-          '\n\n<<<< Implementation of iadd, imul, idiv, and isub. >>>>'
+          '\n\n<<<< Implementation of iand, ishr, ishl, ior, irem, and iushr. >>>>'
           '\ntest2_logic.java'
           '\nint a = 1;'
           '\nint b = 2;'
