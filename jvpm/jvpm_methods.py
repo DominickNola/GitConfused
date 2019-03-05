@@ -117,7 +117,6 @@ class OpCodeMethods():
         print("> ior: Popped (" + str(var1) + ") and (" + str(var2) +
           ") from the Stack, assigned to local variables, \nperformed bitwise"
           " OR and pushed the result (" + str(var2 | var1) + ") back to Stack")
-        print(">>>> Top of Stack is now " + str(self.stack.peek()) + ".")
 
     def irem(self):
         var2 = self.stack.pop()
