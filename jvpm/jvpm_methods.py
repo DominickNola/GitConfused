@@ -90,6 +90,7 @@ class OpCodeMethods():
 
     def iload_3(self):
         pushing3 = self.VARIABLES[3]
+        self.stack.push(pushing3)
         print('iload_3: Load VARIABLES[3] on the Stack for processing.')
 
     def imul(self):
