@@ -114,21 +114,28 @@ class OpCodeMethods():
         var2 = self.stack.pop()
         var1 = self.stack.pop()
         self.stack.push(var1 | var2)
+        print("> ior: Popped (" + str(var1) + ") and (" + str(var2) +
+          ") from the Stack, assigned to local variables, \nperformed bitwise"
+          " OR and pushed the result (" + str(var2 | var1) + ") back to Stack")
+        print(">>>> Top of Stack is now " + str(self.stack.peek()) + ".")
 
     def irem(self):
         var2 = self.stack.pop()
         var1 = self.stack.pop()
         self.stack.push(var1 % var2)
+        print("irem = " + str(S.peek()))
 
     def ishl(self):
         var2 = self.stack.pop()
         var1 = self.stack.pop()
         self.stack.push(var1 << var2)
+        print("ishl = " + str(S.peek()))
 
     def ishr(self):
         var2 = self.stack.pop()
         var1 = self.stack.pop()
         self.stack.push(var1 >> var2)
+        print("ishr = " + str(S.peek()))
 
     def istore_0(self):
         popped = self.stack.pop()
@@ -181,6 +188,7 @@ class OpCodeMethods():
         variable1 = self.stack.pop()
         self.stack.push(variable1 ^ variable2)
         print("ran ixor")
+        print("ixor = " + str(S.peek()))
 
             # Array of arguments from the main for istore and iload
     switcher = {
