@@ -43,7 +43,7 @@ class OpCodes():
     opcodes, and implement the methods using the external dictionary of methods"""
     def __init__(self):
         # Codes to Implement Logic
-        self.opcodes = ['05', '3c', '05', '3d', '1b', '1c', '7e', '1c', '7a', '1b', '78', '1b',
+        self.opcodes = ['05', '3c', '05', '3d', '1b', '1c', '7e', '1c', '78', '1b', '7a', '1b',
                         '80', '1c', '70', '1b', '82', '3e']
 
 
