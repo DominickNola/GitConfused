@@ -123,13 +123,14 @@ class OpCodeMethods():
         var2 = self.stack.pop()
         var1 = self.stack.pop()
         self.stack.push(var1 % var2)
-        print("irem = " + str(self.stack.peek()))
+        print("irem: Popped both variables from the stack to obtain the remainder = " + str(self.stack.peek()))
 
     def ishl(self):
         var2 = self.stack.pop()
         var1 = self.stack.pop()
         self.stack.push(var1 << var2)
-        print("ishl = " + str(self.stack.peek()))
+        print("ishr: Popped both variables from the Stack and stored in local variables," 
+              "\nshifted var2 left by var1 = " + str(self.stack.peek()))
 
     def ishr(self):
         var2 = self.stack.pop()
@@ -188,7 +189,6 @@ class OpCodeMethods():
         variable2 = self.stack.pop()
         variable1 = self.stack.pop()
         self.stack.push(variable1 ^ variable2)
-        print("ran ixor")
         print("ixor = " + str(self.stack.peek()))
 
             # Array of arguments from the main for istore and iload
