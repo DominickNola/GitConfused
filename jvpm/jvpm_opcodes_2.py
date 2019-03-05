@@ -87,7 +87,7 @@ if '__main__' == __name__:
           '\ntest2_logic.java'
           '\nint a = 2;'
           '\nint b = 2;'
-          '\nint c = ((((((a & b) >> b) << a) | a) % b) ^ a);\n')
+          '\nint c = ((((((a & b) << b) >> a) | a) % b) ^ a);\n')
 
     O = OpCodes()
     O.dict_search(OpCodeMethods()) # will need to pass through the oject that holds all the methods
