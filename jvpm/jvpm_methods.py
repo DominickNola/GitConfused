@@ -135,7 +135,8 @@ class OpCodeMethods():
         var2 = self.stack.pop()
         var1 = self.stack.pop()
         self.stack.push(var1 >> var2)
-        print("ishr = " + str(self.stack.peek()))
+        print("ishr: Popped both variables from the Stack and stored in local variables," 
+              "\nshifted var1 right by var2 = " + str(self.stack.peek()))
 
     def istore_0(self):
         popped = self.stack.pop()
