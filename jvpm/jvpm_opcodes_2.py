@@ -85,7 +85,7 @@ if '__main__' == __name__:
           '\n  imported method dictionary to implement the method:___'
           '\n\n<<<< Implementation of iand, ishr, ishl, ior, irem, and ixor. >>>>'
           '\ntest2_logic.java'
-          '\nint a = 1;'
+          '\nint a = 2;'
           '\nint b = 2;'
           '\nint c = ((((((a & b) >> b) << a) | a) % b) ^ a);\n')
 
