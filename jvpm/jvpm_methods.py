@@ -123,19 +123,19 @@ class OpCodeMethods():
         var2 = self.stack.pop()
         var1 = self.stack.pop()
         self.stack.push(var1 % var2)
-        print("irem = " + str(S.peek()))
+        print("irem = " + str(self.stack.peek()))
 
     def ishl(self):
         var2 = self.stack.pop()
         var1 = self.stack.pop()
         self.stack.push(var1 << var2)
-        print("ishl = " + str(S.peek()))
+        print("ishl = " + str(self.stack.peek()))
 
     def ishr(self):
         var2 = self.stack.pop()
         var1 = self.stack.pop()
         self.stack.push(var1 >> var2)
-        print("ishr = " + str(S.peek()))
+        print("ishr = " + str(self.stack.peek()))
 
     def istore_0(self):
         popped = self.stack.pop()
@@ -188,7 +188,7 @@ class OpCodeMethods():
         variable1 = self.stack.pop()
         self.stack.push(variable1 ^ variable2)
         print("ran ixor")
-        print("ixor = " + str(S.peek()))
+        print("ixor = " + str(self.stack.peek()))
 
             # Array of arguments from the main for istore and iload
     switcher = {
