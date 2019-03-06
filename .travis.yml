@@ -34,8 +34,8 @@ install:
   - pip install codecov
 
 script:
-  - coverage run -m unittest
-  - coverage xml -i
+  #- coverage run -m unittest
+  #- coverage xml -i
 
 
 after_success:
