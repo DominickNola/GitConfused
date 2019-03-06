@@ -466,36 +466,22 @@ class Test_Op_Methods(unittest.TestCase):
         self.assertEqual(b, 6)
 
     def test_dict_search(self):
-        a = OpCodeMethods()
-        l = OpCodes()
-
-        l.opcodes =['06', '3c', '04', '3d', '1b', '1c', '82', '3e'] # Testing some op codes
-        a.VARIABLES.append(0) # adding random constants to test methods \/
-        a.VARIABLES.append(1)
-        a.VARIABLES.append(2)
-        a.VARIABLES.append(3)
-        a.VARIABLES.append(4)
-        a.VARIABLES.append(5)
 
         sys.stdout = unittest.mock.Mock()
-        l.dict_search(a)
+        O = OpCodes()
+        opcodes = ['04', '3c', '05']
+        O.dict_search(opcodes)
         sys.stdout.assert_has_calls(
 
-            [call.write('iconst_3'), call.write('\n'),
-            call.write('ran iconst_3'), call.write('\n'),
-            call.write('istore_1'), call.write('\n'),
-            call.write('ran istore_1'), call.write('\n'),
-            call.write('iconst_1'), call.write('\n'),
-            call.write('ran iconst_1'), call.write('\n'),
-            call.write('istore_2'), call.write('\n'),
-            call.write('ran istore_2'), call.write('\n'),
-            call.write('iload_1'), call.write('\n'),
-            call.write('ran iload_1'), call.write('\n'),
-            call.write('iload_2'), call.write('\n'),
-            call.write('ran iload_2'), call.write('\n'),
-            call.write('ixor'), call.write('\n'),
-            call.write('ran ixor'), call.write('\n'),
-            call.write('istore_3'), call.write('\n'),
-            call.write('ran istore_3'), call.write('\n'), call.write('\n')]
+            [call.write("iconst_1: Pushed 1 to Stack in jvpm_methods.py."),
+             call.write('\n'),
+             call.write("istore_1: Popped 1 from Stack and stored in VARIABLES[1] in jvpm_methods.py."),
+             call.write('\n'),
+             call.write("iconst_2: Pushed 2 to Stack in jvpm_methods.py."),
+             call.write('\n')]
+
         )
+
+
+
 

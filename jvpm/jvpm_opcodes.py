@@ -42,9 +42,11 @@ class OpCodes():
     """Parse Opcodes into an array from the .class file, search the external dictionary of
     opcodes, and implement the methods using the external dictionary of methods"""
     def __init__(self):
-        self.opcodes = ['04', '3c', '05', '3d', '1b', '1c', '60', '1c', '68', '1c', '6c', '1c',
-                         '64', '3e']
+        #self.opcodes = ['04', '3c', '05', '3d', '1b', '1c', '60', '1c', '68', '1c', '6c', '1c',
+        #                '64', '3e']
         # self.opcodes = ['06', '3c', '04', '3d', '1b', '1c', '60', '3e']
+        opcodes = []
+        self.jvMethodsIn = OpCodeMethods()
 
 
         """
@@ -56,16 +58,17 @@ class OpCodes():
 
         """
 
-    def dict_search(self, jvMethodsIn):
+    def dict_search(self, opcodes ):
 
         index = 0
+        #jvMethodsIn = OpCodeMethods()
 
-        while index < len(self.opcodes):
-            opcall = jvpm_dict.get_opcode(self.opcodes[index])
+        while index < len(opcodes):
+            opcall = jvpm_dict.get_opcode(opcodes[index])
 
             # print (opcall) # just to see what opcall is passed through
 
-            jvMethodsIn.token_dict(opcall)
+            self.jvMethodsIn.token_dict(opcall)
             index += 1
         print()
 
@@ -95,7 +98,8 @@ if '__main__' == __name__:
           '\nint c = ((((a + b) * b) / b) - b);)\n')
 
     O = OpCodes()
-    O.dict_search(OpCodeMethods()) # will need to pass through the oject that holds all the methods
+    opcodes = ['04', '3c', '05', '3d', '1b', '1c', '60', '1c', '68', '1c', '6c', '1c','64', '3e']
+    O.dict_search(opcodes)
     # also need to have actual constant that are held in the object with the opcall methods
 
 
